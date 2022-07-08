@@ -48,7 +48,7 @@ function draw() {
   background(180);
   
   score = score + Math.round(getFrameRate()/60);
-  text("Score: "+ score, 500,50);
+  text("Score: changes "+ score, 500,50);
   
   if(keyDown("space")) {
     trex.velocityY = -10;
@@ -76,6 +76,7 @@ function spawnClouds() {
     cloud.velocityX = -3;
     
      //assign lifetime to the variable
+    //edited to see change
     cloud.lifetime = 200;
     
     //adjust the depth
